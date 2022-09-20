@@ -1,0 +1,41 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  background: rgb(237, 231, 220);
+  background: linear-gradient(90deg, rgb(237, 231, 220) 48%, rgb(189, 195, 203) 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main h2 {
+  text-align: center;
+  color: #bdc3cb;
+}
+main form {
+  margin-bottom: 50px;
+}
+main form .button-container {
+  margin-top: 30px;
+}
+main form .button-container .button-add-expense {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}
+main .table thead td {
+  font-weight: bold;
+}
+main .table td {
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

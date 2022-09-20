@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Expense Tracker</title>
+
+    <!-- Imports Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Imports Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- imports styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Expense Tracker</h1>
+          <h2 class="text-success">Add new item:</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <form class="row g-3">
+            <div class="col-12">
+              <label for="expenseName" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="expenseName"
+                aria-describedby="expenseName"
+              />
+            </div>
+            <div class="col-6">
+              <label for="date" class="form-label">Date:</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date"
+                aria-describedby="date"
+              />
+            </div>
+            <div class="col-6">
+              <label for="amount" class="form-label">Amount:</label>
+              <input
+                type="amount"
+                class="form-control"
+                id="amount"
+                aria-describedby="amount"
+              />
+            </div>
+            <div class="col-12 button-container">
+              <button type="submit" class="btn btn-success button-add-expense">
+                Add Expense
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-striped">
+            <thead>
+              <td>Name</td>
+              <td>Date</td>
+              <td>Amount</td>
+            </thead>
+            <tbody>
+              <tr class="table-active">
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
