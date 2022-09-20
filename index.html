@@ -7,6 +7,10 @@
 
     <title>Expense Tracker</title>
 
+    <!-- Imports Font Awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
     <!-- Imports Bootstrap -->
     <link
       rel="stylesheet"
@@ -23,8 +27,14 @@
 
     <!-- imports styles -->
     <link rel="stylesheet" href="./styles/styles.css" />
+
   </head>
   <body>
+    <div class="container-fluid">
+      <div class="alert alert-danger" role="alert">
+        Expense already exist!
+      </div>
+    </div>
     <main class="container">
       <div class="row">
         <div class="col-12">
@@ -42,6 +52,7 @@
                 class="form-control"
                 id="expenseName"
                 aria-describedby="expenseName"
+                
               />
             </div>
             <div class="col-6">
@@ -51,15 +62,17 @@
                 class="form-control"
                 id="date"
                 aria-describedby="date"
+                
               />
             </div>
             <div class="col-6">
               <label for="amount" class="form-label">Amount:</label>
               <input
-                type="amount"
+                type="text"
                 class="form-control"
                 id="amount"
                 aria-describedby="amount"
+                
               />
             </div>
             <div class="col-12 button-container">
@@ -79,10 +92,8 @@
               <td>Amount</td>
             </thead>
             <tbody>
-              <tr class="table-active">
-                <td>N/A</td>
-                <td>N/A</td>
-                <td>N/A</td>
+              <tr class="no-expense">
+                <td colspan="3">No Expenses added yet!</td>
               </tr>
             </tbody>
           </table>
@@ -90,6 +101,10 @@
       </div>
     </main>
 
+    <!-- Imports Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Imports JS -->
+    <script src="./script.js"></script>
   </body>
 </html>

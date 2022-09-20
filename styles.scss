@@ -45,11 +45,17 @@ main {
     thead {
       td {
         font-weight: bold;
+        vertical-align: middle;
       }
     }
-
-    td {
-      text-align: center;
+    tbody {
+      tr {
+        vertical-align: middle;
+      }
+    }
+    .del-btn {
+      font-size: 20px;
+      padding: 0;
     }
   }
 }

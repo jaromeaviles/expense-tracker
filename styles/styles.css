@@ -35,7 +35,12 @@ main form .button-container .button-add-expense {
 }
 main .table thead td {
   font-weight: bold;
+  vertical-align: middle;
 }
-main .table td {
-  text-align: center;
+main .table tbody tr {
+  vertical-align: middle;
+}
+main .table .del-btn {
+  font-size: 20px;
+  padding: 0;
 }/*# sourceMappingURL=styles.css.map */
