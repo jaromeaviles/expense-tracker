@@ -33,7 +33,7 @@ function displayExpenses() {
     delButton.append(span);
     tdDel.append(delButton);
 
-    tdName.textContent = e.name;
+    tdName.innerHTML = e.name.replace(/(.{20})/g, "$1<br>");
     tdDate.textContent = e.date;
     tdAmount.textContent = e.amount;
     tr.append(tdName);
@@ -62,7 +62,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
 });
 
-// checks amount to only accepts number
+// checks amount to only accepts number and limit number of characters
 
 let numberRegex = /^[0-9]+$/;
 

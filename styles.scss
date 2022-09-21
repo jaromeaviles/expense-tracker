@@ -58,4 +58,11 @@ main {
       padding: 0;
     }
   }
+
+  td {
+    text-align: center;
+    @media only screen and (min-width: 992px) {
+      text-align: left;
+    }
+  }
 }

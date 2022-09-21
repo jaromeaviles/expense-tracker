@@ -43,4 +43,12 @@ main .table tbody tr {
 main .table .del-btn {
   font-size: 20px;
   padding: 0;
+}
+main td {
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  main td {
+    text-align: left;
+  }
 }/*# sourceMappingURL=styles.css.map */
